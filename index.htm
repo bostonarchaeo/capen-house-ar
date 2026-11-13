@@ -53,7 +53,30 @@
     <p>Full-scale 3D timber frame reconstruction</p>
   </header>
 
+  <div class="instructions">
+    <h2>View the House Outside</h2>
+    <p>
+      Rotate the model to explore the timber frame.
+      On a compatible mobile device, select the AR button
+      to place the house in your open area at full scale.
+    </p>
+  </div>
+
   <model-viewer
+  src="capen-house-17.glb"
+  ar
+  ar-modes="quick-look scene-viewer webxr"
+  ar-placement="floor"
+  ar-scale="fixed"
+  camera-controls
+  camera-orbit="0deg 75deg 140%"
+  camera-target="auto auto auto"
+  shadow-intensity="1"
+  exposure="1">
+</model-viewer>
+<div class="instructions">
+    <h2>17th-Century Original House</h2>
+    <model-viewer
   src="capen-house.glb"
   ar
   ar-modes="quick-look scene-viewer webxr"
@@ -65,20 +88,9 @@
   shadow-intensity="1"
   exposure="1">
 </model-viewer>
-
-  <div class="instructions">
-    <h2>View the House Outside</h2>
-    <p>
-      Rotate the model to explore the timber frame.
-      On a compatible mobile device, select the AR button
-      to place the house in your surroundings at full scale.
-    </p>
-    <p>
-      Use your camera to position the house on a level,
-      open outdoor surface or large open area. Walk around it to appreciate its
-      full dimensions.
-    </p>
-  </div>
+  
+<div class="instructions">
+    <h2>With 18th-century Additions</h2>
 
 </body>
 </html>
