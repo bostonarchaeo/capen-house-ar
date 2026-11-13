@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capen House AR Reconstruction</title>
+
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f1eb;
+      color: #292929;
+      text-align: center;
+    }
+
+    header {
+      padding: 24px 16px 10px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 65vh;
+      min-height: 400px;
+      background-color: #e5e5df;
+    }
+
+    .instructions {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Capen House</h1>
+    <p>Full-scale 3D timber frame reconstruction</p>
+  </header>
+
+  <model-viewer
+    src="capen-house.glb"
+    ar
+    ar-modes="quick-look scene-viewer webxr"
+    ar-scale="fixed"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    exposure="1">
+
+  </model-viewer>
+
+  <div class="instructions">
+    <h2>View the House in Your Space</h2>
+    <p>
+      Rotate the model to explore the timber frame.
+      On a compatible mobile device, select the AR button
+      to place the house in your surroundings at full scale.
+    </p>
+    <p>
+      Use your camera to position the house on a level,
+      open surface. Walk around it to appreciate its
+      full dimensions.
+    </p>
+  </div>
+
+</body>
+</html>
